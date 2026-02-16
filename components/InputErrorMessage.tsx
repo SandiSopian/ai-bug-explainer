@@ -50,7 +50,7 @@ const InputErrorMessage = ({ setResult, setIsLoading }: Props) => {
 
   return (
     <section className="input-error mt-1 md:px-7 w-full">
-      <p className="font-semibold text-md ml-6">
+      <p className="font-semibold tracking-tight text-md text-center md:text-left md:ml-6">
         Paste your error message below:
       </p>
 
@@ -66,7 +66,7 @@ const InputErrorMessage = ({ setResult, setIsLoading }: Props) => {
           <button
             onClick={handleGenerate}
             disabled={!text || loading}
-            className="border text-white bg-blue-700 hover:bg-blue-600 py-2 px-10 rounded mt-2 max-w-sm hover:shadow-lg transition-shadow duration-300 hover:cursor-pointer"
+            className="border text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 shadow-lg hover:shadow-xl rounded-xl py-2 px-10 rounded mt-2 max-w-sm hover:shadow-lg transition-shadow duration-300 hover:cursor-pointer hover:scale-105 transition-transform duration-200"
           >
             {loading ? "Loading..." : "Explain this error"}
           </button>
