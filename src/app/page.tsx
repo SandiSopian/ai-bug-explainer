@@ -7,7 +7,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <main className="p-8 w-full mx-auto bg-gradient-to-br from-indigo-50 via-white to-blue-50">
+    <main className="p-8 w-full mx-auto">
       <section className="text-center py-8 max-w-3xl mx-auto">
         <h1 className="text-5xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
           Fix Your Bugs in Seconds
