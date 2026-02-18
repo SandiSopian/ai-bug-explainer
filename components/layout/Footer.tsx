@@ -31,6 +31,14 @@ const Footer = () => {
         {/* Company Info */}
         <div className="flex-1 flex flex-col text-left gap-2">
           <p className="font-semibold">Explore</p>
+
+          <Link
+            href="/"
+            className={`text-sm text-gray-400 hover:underline ${pathname === "/" ? "text-indigo-400" : ""}`}
+          >
+            Home
+          </Link>
+
           <Link
             href="/about"
             className={`text-sm text-gray-400 hover:underline ${pathname === "/about" ? "text-indigo-400" : ""}`}

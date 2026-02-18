@@ -31,6 +31,19 @@ const Navbar = () => {
         <ul className="flex items-center gap-8 mr-12 hidden lg:flex">
           <li>
             <Link
+              href="/"
+              className={`text-lg transition-colors duration-300 ${
+                pathname === "/"
+                  ? "text-indigo-600 dark:text-indigo-400 font-semibold"
+                  : "text-gray-500 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
+              }`}
+            >
+              Home
+            </Link>
+          </li>
+
+          <li>
+            <Link
               href="/about"
               className={`text-lg transition-colors duration-300 ${
                 pathname === "/about"
