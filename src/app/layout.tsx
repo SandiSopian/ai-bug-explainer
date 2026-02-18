@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "AI Code Error Fixer – Understand & Fix Programming Errors Instantly",
   description:
     "Struggling with coding errors? Our AI Code Error Fixer helps you understand, debug, and prevent programming issues instantly. Get clear explanations and actionable solutions in seconds.",
+  verification: {
+    google: "Q_aMlC-RvDeHG0AqZBrPrc4kcE2XIBmz-Aqnq51Bl-M",
+  },
   keywords: [
     "AI code error fixer",
     "debug code with AI",
