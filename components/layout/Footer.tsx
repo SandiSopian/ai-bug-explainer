@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white text-center p-6 mt-12">
-      <div className="flex gap-4 py-8">
+    <footer className="bg-gray-800 text-white text-center p-6 mt-12 flex flex-col">
+      <div className="flex flex-col md:flex-row gap-4 py-8">
         {/* Product Title */}
         <div className="flex-1 flex flex-col text-left gap-2">
           <p className="font-bold text-lg">AI BUG EXPLAINER</p>

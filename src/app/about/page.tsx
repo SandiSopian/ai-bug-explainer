@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About Us – AI Code Error Fixer",
+  description:
+    "Learn about our mission to help developers debug smarter using AI-powered error diagnosis tools.",
+};
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen py-20 px-6">
