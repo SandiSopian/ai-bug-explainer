@@ -57,7 +57,7 @@ const InputErrorMessage = ({ setResult, setIsLoading }: Props) => {
       <div className="bg-white p-4 rounded shadow-md mt-2 w-full h-auto flex flex-col items-center mx-auto">
         <textarea
           placeholder="Input error here..."
-          className="w-full font-mono text-sm bg-slate-50 h-80 p-2 border border-gray-400 rounded mt-2 focus:outline-none focus:ring-2 focus:ring-gray-300"
+          className="w-full font-mono text-sm bg-slate-50 h-80 p-2 border border-gray-400 rounded mt-2 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:text-gray-800"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />

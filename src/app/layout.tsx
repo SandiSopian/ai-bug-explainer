@@ -49,7 +49,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrains.variable} font-sans antialiased`}
       >
-        <div className="bg-gradient-to-br from-indigo-50 via-white to-blue-50">
+        <div
+          className="bg-gradient-to-br from-indigo-50 via-white to-blue-50 dark:bg-gradient-to-br dark:from-slate-900 dark:via-indigo-950 dark:to-slate-900
+"
+        >
           <Navbar />
           {children}
           <Footer />

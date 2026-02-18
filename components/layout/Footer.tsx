@@ -1,9 +1,12 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
   return (
-    <footer className="bg-gray-800 text-white text-center p-6 mt-12 flex flex-col">
+    <footer className="bg-gray-800 dark:bg-slate-950 text-white text-center p-6 mt-12 flex flex-col">
       <div className="flex flex-col md:flex-row gap-4 py-8">
         {/* Product Title */}
         <div className="flex-1 flex flex-col text-left gap-2">
@@ -28,13 +31,16 @@ const Footer = () => {
         {/* Company Info */}
         <div className="flex-1 flex flex-col text-left gap-2">
           <p className="font-semibold">Explore</p>
-          <Link href="/about" className="text-sm text-gray-400 hover:underline">
+          <Link
+            href="/about"
+            className={`text-sm text-gray-400 hover:underline ${pathname === "/about" ? "text-indigo-400" : ""}`}
+          >
             About Us
           </Link>
 
           <Link
             href="/contact"
-            className="text-sm text-gray-400 hover:underline"
+            className={`text-sm text-gray-400 hover:underline ${pathname === "/contact" ? "text-indigo-400" : ""}`}
           >
             Contact Us
           </Link>

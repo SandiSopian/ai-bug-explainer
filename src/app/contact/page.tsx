@@ -37,7 +37,7 @@ export default function ContactPage() {
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
             Contact Us
           </h1>
-          <p className="text-gray-600 mt-3">
+          <p className="text-gray-600 dark:text-gray-400 mt-3">
             Have questions or feedback? We'd love to hear from you.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function ContactPage() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>
-              <label className="block text-sm font-medium mb-2">
+              <label className="block text-sm font-medium mb-2 dark:text-gray-700">
                 Your Name
               </label>
               <input
@@ -56,14 +56,14 @@ export default function ContactPage() {
                 value={form.name}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition dark:text-gray-800"
                 placeholder="John Doe"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label className="block text-sm font-medium mb-2">
+              <label className="block text-sm font-medium mb-2 dark:text-gray-700">
                 Email Address
               </label>
               <input
@@ -72,21 +72,23 @@ export default function ContactPage() {
                 value={form.email}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition dark:text-gray-800"
                 placeholder="john@email.com"
               />
             </div>
 
             {/* Message */}
             <div>
-              <label className="block text-sm font-medium mb-2">Message</label>
+              <label className="block text-sm font-medium mb-2 dark:text-gray-700">
+                Message
+              </label>
               <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition resize-none"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300 transition resize-none dark:text-gray-800"
                 placeholder="Write your message here..."
               />
             </div>

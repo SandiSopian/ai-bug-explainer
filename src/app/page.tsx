@@ -13,7 +13,7 @@ export default function Home() {
           Fix Your Bugs in Seconds
         </h1>
 
-        <p className="mt-6 text-lg text-slate-600 leading-relaxed">
+        <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           Paste your error message and get instant AI-powered explanation, root
           cause analysis, and actionable fixes.
         </p>
