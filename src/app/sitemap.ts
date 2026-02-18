@@ -1,15 +1,18 @@
-export default function sitemap() {
+import { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://ai-bug-explainer-teal.vercel.app";
   return [
     {
-      url: "https://ai-bug-explainer-teal.vercel.app",
+      url: `${baseUrl}/`,
       lastModified: new Date(),
     },
     {
-      url: "https://ai-bug-explainer-teal.vercel.app/about",
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
     },
     {
-      url: "https://ai-bug-explainer-teal.vercel.app/contact",
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
     },
   ];
